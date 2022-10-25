@@ -8,14 +8,14 @@ namespace CretaceousPark.Migrations
         {
             migrationBuilder.InsertData(
                 table: "Animals",
-                columns: new[] { "AnimalId", "Age", "Gender", "Name", "Species" },
+                columns: new[] { "AnimalId", "Age", "Name", "Species" },
                 values: new object[,]
                 {
-                    { 1, 7, "Female", "Matilda", "Woolly Mammoth" },
-                    { 2, 10, "Female", "Rexie", "Dinosaur" },
-                    { 3, 2, "Female", "Matilda", "Dinosaur" },
-                    { 4, 4, "Male", "Pip", "Shark" },
-                    { 5, 22, "Male", "Bartholomew", "Dinosaur" }
+                    { 1, 7, "Matilda", "Woolly Mammoth" },
+                    { 2, 10, "Rexie", "Dinosaur" },
+                    { 3, 2, "Matilda", "Dinosaur" },
+                    { 4, 4, "Pip", "Shark" },
+                    { 5, 22, "Bartholomew", "Dinosaur" }
                 });
         }
 

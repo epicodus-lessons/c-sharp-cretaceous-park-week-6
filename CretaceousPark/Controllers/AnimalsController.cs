@@ -22,7 +22,7 @@ namespace CretaceousPark.Controllers
 
     // GET: api/Animals
     [HttpGet]
-    public async Task<ActionResult<IEnumerable<Animal>>> Get(string species, string gender, string name)
+    public async Task<ActionResult<IEnumerable<Animal>>> Get(string species, string name)
     {
       var query = _db.Animals.AsQueryable();
 
@@ -30,11 +30,6 @@ namespace CretaceousPark.Controllers
       {
         query = query.Where(entry => entry.Species == species);
       }
-
-      if (gender != null)
-      {
-        query = query.Where(entry => entry.Gender == gender);
-      }    
 
       if (name != null)
       {

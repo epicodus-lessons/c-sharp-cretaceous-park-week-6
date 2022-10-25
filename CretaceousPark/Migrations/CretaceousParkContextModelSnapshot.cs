@@ -25,9 +25,6 @@ namespace CretaceousPark.Migrations
                     b.Property<int>("Age")
                         .HasColumnType("int");
 
-                    b.Property<string>("Gender")
-                        .HasColumnType("longtext CHARACTER SET utf8mb4");
-
                     b.Property<string>("Name")
                         .HasColumnType("longtext CHARACTER SET utf8mb4");
 
@@ -43,7 +40,6 @@ namespace CretaceousPark.Migrations
                         {
                             AnimalId = 1,
                             Age = 7,
-                            Gender = "Female",
                             Name = "Matilda",
                             Species = "Woolly Mammoth"
                         },
@@ -51,7 +47,6 @@ namespace CretaceousPark.Migrations
                         {
                             AnimalId = 2,
                             Age = 10,
-                            Gender = "Female",
                             Name = "Rexie",
                             Species = "Dinosaur"
                         },
@@ -59,7 +54,6 @@ namespace CretaceousPark.Migrations
                         {
                             AnimalId = 3,
                             Age = 2,
-                            Gender = "Female",
                             Name = "Matilda",
                             Species = "Dinosaur"
                         },
@@ -67,7 +61,6 @@ namespace CretaceousPark.Migrations
                         {
                             AnimalId = 4,
                             Age = 4,
-                            Gender = "Male",
                             Name = "Pip",
                             Species = "Shark"
                         },
@@ -75,7 +68,6 @@ namespace CretaceousPark.Migrations
                         {
                             AnimalId = 5,
                             Age = 22,
-                            Gender = "Male",
                             Name = "Bartholomew",
                             Species = "Dinosaur"
                         });

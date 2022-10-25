@@ -15,8 +15,7 @@ namespace CretaceousPark.Migrations
                         .Annotation("MySql:ValueGenerationStrategy", MySqlValueGenerationStrategy.IdentityColumn),
                     Name = table.Column<string>(type: "longtext CHARACTER SET utf8mb4", nullable: true),
                     Species = table.Column<string>(type: "longtext CHARACTER SET utf8mb4", nullable: true),
-                    Age = table.Column<int>(type: "int", nullable: false),
-                    Gender = table.Column<string>(type: "longtext CHARACTER SET utf8mb4", nullable: true)
+                    Age = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {
